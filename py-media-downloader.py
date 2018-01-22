@@ -33,9 +33,6 @@ fullpath=domain+'/'+domainfolder
 if(os.path.exists(fullpath) == False):
     os.makedirs(fullpath, 0777)
 
-print domain
-print domainfolder
-
 for i in links:
     print i[0]+' is saving as: '+ i[0].split('/')[-1]+' in '+fullpath
     file = urllib.URLopener()
